@@ -10,8 +10,8 @@ def get_webp_emoji():
 
     file = open(guilded_emoji_link_file,'r')
     
-    if os.path.exists('emojis'):
-        os.mkdir('empjis')
+    if os.path.exists('emojis') is False:
+        os.mkdir('emojis')
     
     lines = file.readlines()
     for line in lines:
